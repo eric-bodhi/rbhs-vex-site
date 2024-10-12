@@ -6,120 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"> <!-- Link to your external CSS file -->
     <title>Bootstrap Example</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <style>
-        .carousel-caption {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 10%;
-            right: 10%;
-            text-align: center;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        .carousel-caption h1, .carousel-caption p {
-            display: block;
-            margin-top: 15px;
-        }
-
-        .carousel-item svg {
-            min-height: 300px; /* Adjust this value as needed */
-        }
-
-        .carousel-container {
-            padding-top: 15px;
-            padding-bottom: 20px;
-        }
-
-        .top-logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-        }
-
-        .top-logo img {
-            width: 100px;
-            height: auto;
-        }
-
-        .divider {
-            margin: 5rem 0;
-        }
-
-    </style>
 </head>
-<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+<body class="m-0 border-0">
+
 
 <a class="d-none d-lg-block top-logo" href="https://www.lexington1.net">
-    <img src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_6/v1722963841/lexington1net/ccaw46p5elbv89snv9wq/Districtlogowhite.png" alt="Lexington 1 Logo">
+    <img src="lex1.png" alt="Lexington 1 Logo">
 </a>
+
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-md" data-bs-theme="dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="https://www.lexington1.net">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+        <a class="navbar-brand" href="#">NavBar</a>
+
+        <!-- Hamburger menu (visible on small screens) -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav5"
+                aria-controls="navbarNav5" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar items (collapsible on mobile, inline on desktop) -->
+        <div class="collapse navbar-collapse" id="navbarNav5">
+            <ul class="navbar-nav ms-md-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Legacy</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Up</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- carousel feature -->
+
+
 <div class="carousel-container">
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
-                    aria-current="true"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                    class=""></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                    class=""></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
                 </svg>
                 <div class="container">
-                    <div class="carousel-caption text-start">
+                    <div class="carousel-caption text-center"> <!-- Changed to text-center for centering -->
                         <h1>A World Renowned Vex Robotics Team.</h1>
                         <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
                 </svg>
                 <div class="container">
-                    <div class="carousel-caption">
+                    <div class="carousel-caption text-center">
                         <h1>A Legacy to be Remembered</h1>
-                        <!-- Direct to the legacy page -->
                         <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
                 </svg>
                 <div class="container">
-                    <div class="carousel-caption text-end">
+                    <div class="carousel-caption text-center"> <!-- Changed to text-center for centering -->
                         <h1>A Competitive and Welcoming Family</h1>
                         <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
                     </div>
@@ -136,65 +101,55 @@
         </button>
     </div>
 </div>
-<div class="container">
-    <hr class="divider">
 
-    <div class="row">
-        <div class="col-md-7">
+<div class="container-fluid">
+    <div class="row py-5 bg-light"> <!-- Centering text -->
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
             <h1>Not Legos.</h1>
-            <p class="lead">Vex Robotics offers complex games that incorporate engineering, programming, and most
-                importantly collaboration. In teams, students compete against each other to see who can score the most
-                points in each year's respect game. With limited resources, motors, and time Vex offers a great
-                challenge</p>
+            <p class="lead">Vex Robotics offers complex games that incorporate engineering, programming, and most importantly collaboration. In teams, students compete against each other to see who can score the most points in each year's respective game. With limited resources, motors, and time, Vex offers a great challenge to any student willing.</p>
         </div>
         <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="300"
-                 height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+            <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto row-pic" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
                 <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">PIC HERE</text>
             </svg>
         </div>
     </div>
 
-    <hr class="divider">
-    <div class="row">
+    <div class="row py-5 bg-dark" style="min-height: 600px;"> <!-- Centering text -->
         <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="300"
-                 height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+            <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto row-pic" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
                 <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
                 <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">PIC HERE</text>
             </svg>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-5" style="color: white;">
             <h1>
                 Not Just a Club,
-                <span class="text-body-secondary"> But a family </span>
+                <span style="color:grey"> But a family </span>
             </h1>
 
             <p class="lead">The SwampBots are more than just a robotics team; they're a close-knit group of students who share a passion for problem-solving and innovation. They work together, combining individual strengths to tackle challenges and achieve their goals. This sense of community drives their success, creating an environment where every member is valued and supported. In the end, it's not just about winning competitions, but about growing and learning together as a team.</p>
         </div>
-
+        <div class="col-md-2"></div>
     </div>
 
-    <hr class="divider">
-
-    <div class="row">
-        <div class="col-lg-6 text-center">
-            <img class="bd-placeholder-img rounded-circle mx-auto" width="140" height="140" src="horst.jpeg"
-                 alt="Placeholder">
+    <div class="row py-5 bg-light text-center"> <!-- Centering text -->
+        <div class="col-lg-6">
+            <img class="bd-placeholder-img rounded-circle mx-auto" width="140" height="140" src="horst.jpeg" alt="Placeholder">
             <h2 class="fw-normal">Horst Daichendt</h2>
             <p>Placeholder: Head advisor of the River Bluff High School Swamp Bots and sponsor.</p>
             <p><a class="btn btn-secondary" href="#">More details »</a></p>
         </div>
 
-        <div class="col-lg-6 text-center">
-            <!--write svg tag of a gray circle-->
-            <img class="bd-placeholder-img rounded-circle mx-auto" width="140" height="140" src="horst.jpeg"
-                 alt="Placeholder">
-            <h2 class="fw-normal">Other Advisor/Captain?</h2>
-            <p>Placeholder: Club Captain / President / Title... blah</p>
+        <div class="col-lg-6">
+            <svg class="bd-placeholder-img rounded-circle mx-auto" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+                <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">PIC HERE</text>
+            </svg>
+            <h2 class="fw-normal">Placeholder: Team leaders</h2>
+            <p>More than one! </p>
             <p><a class="btn btn-secondary" href="#">More details »</a></p>
         </div>
     </div>
