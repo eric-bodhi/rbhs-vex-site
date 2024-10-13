@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
     .navbar-collapse {
         height: 100vh;
         display: flex;
@@ -6,11 +6,41 @@
         align-items: center;
         justify-content: center;
         background-color: #3e4149;
-        transition: all 0.5s;
+        transition: height 0.5s;
     }
 
-    .navbar-toggler {
-        outline: none;
+    /* Navbar collapse transition */
+    .navbar-collapse.collapsing {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    /* TODO add mobile transition for dropdown-menu */
+    /* Dropdown menu default */
+    .dropdown-menu {
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
+    }
+
+    /* Dropdown menu expanding (show) */
+    .dropdown-menu.show {
+        max-height: 300px; /* Adjust as needed */
+        opacity: 1;
+        visibility: visible;
+        transition: max-height 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    /* Specialized dropdown collapsing */
+    .dropdown-menu.collapsing {
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.3s ease-in, opacity 0.3s ease-in, visibility 0.3s ease-in;
     }
 
     .navbar-toggler:focus {
@@ -29,15 +59,19 @@
 
     .nav-item {
         padding: 0.2em 4em;
+        text-align: center;
     }
+
     .nav-item:not(:last-child) {
         border-bottom: 1px solid gray;
     }
-
 }
 
 /* Desktop-specific styles (md and larger) */
-@media (min-width: 768px) {
+@media (min-width: 1401px) {
+    .navbar-collapse {
+        display: flex;
+    }
     .navbar {
         background-color: transparent;
     }
@@ -66,6 +100,7 @@
     }
 
     .nav-item .dropdown-menu {
+        display: none;
         min-width: 10rem;
         width: auto;
         left: 0;
@@ -74,6 +109,15 @@
     .nav-item.dropdown:hover .dropdown-menu {
         display: block;
         margin-top: 0;
+    }
+
+    /* Disable click to open dropdown */
+    .nav-item.dropdown > .nav-link {
+        pointer-events: none;
+    }
+
+    .nav-item.dropdown:hover > .nav-link {
+        pointer-events: auto;
     }
 }
 
