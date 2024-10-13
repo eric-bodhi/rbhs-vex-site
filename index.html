@@ -12,15 +12,13 @@
 </head>
 <body class="m-0 border-0">
 
-
-<a class="d-none d-lg-block top-logo" href="https://www.lexington1.net">
-    <img src="lex1.png" alt="Lexington 1 Logo">
-</a>
-
 <!-- navbar -->
-<nav class="navbar navbar-expand-md" data-bs-theme="dark">
+<nav class="navbar navbar-expand-md fixed-top bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">NavBar</a>
+        <a class="navbar-brand" href="">
+            <img src="Swamp-Bots-Team-logo-768x1062-removebg.png" alt="Bootstrap logo"
+                 width="150" height="75">
+        </a>
 
         <!-- Hamburger menu (visible on small screens) -->
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav5"
@@ -29,130 +27,52 @@
         </button>
 
         <!-- Navbar items (collapsible on mobile, inline on desktop) -->
+        <!-- TODO make so they dropdown when hovered not just clicked -->
         <div class="collapse navbar-collapse" id="navbarNav5">
-            <ul class="navbar-nav ms-md-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <li><a class="dropdown-item" href="#">Our Advisors</a></li>
+                        <li><a class="dropdown-item" href="#">River Bluff High School</a></li>
+                        <li><a class="dropdown-item" href="#">Lexington 1 District</a></li>
+                        <li><a class="dropdown-item" href="#">Our Teams</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="vexDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        VEX Robotics
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="vexDropdown">
+                        <li><a class="dropdown-item" href="#">What's VEX?</a></li>
+                        <li><a class="dropdown-item" href="#">Annual Game</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                        <li><a class="dropdown-item" href="#">Team Resources</a></li>
+                        <li><a class="dropdown-item" href="#">Volunteering</a></li>
+                        <li><a class="dropdown-item" href="#">Forms</a></li>
+                    </ul>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Legacy</a>
+                    <a class="nav-link" href="#">Sponsor Us!</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sign Up</a>
+                    <a class="nav-link" href="#">Upcoming Events</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
-
-
-<div class="carousel-container">
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-interval="3000">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                </svg>
-                <div class="container">
-                    <div class="carousel-caption text-center"> <!-- Changed to text-center for centering -->
-                        <h1>A World Renowned Vex Robotics Team.</h1>
-                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                </svg>
-                <div class="container">
-                    <div class="carousel-caption text-center">
-                        <h1>A Legacy to be Remembered</h1>
-                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                </svg>
-                <div class="container">
-                    <div class="carousel-caption text-center"> <!-- Changed to text-center for centering -->
-                        <h1>A Competitive and Welcoming Family</h1>
-                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>
-
-<div class="container-fluid">
-    <div class="row py-5 bg-light"> <!-- Centering text -->
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-            <h1>Not Legos.</h1>
-            <p class="lead">Vex Robotics offers complex games that incorporate engineering, programming, and most importantly collaboration. In teams, students compete against each other to see who can score the most points in each year's respective game. With limited resources, motors, and time, Vex offers a great challenge to any student willing.</p>
-        </div>
-        <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto row-pic" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
-                <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">PIC HERE</text>
-            </svg>
-        </div>
-    </div>
-
-    <div class="row py-5 bg-dark" style="min-height: 600px;"> <!-- Centering text -->
-        <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto row-pic" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
-                <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">PIC HERE</text>
-            </svg>
-        </div>
-        <div class="col-md-5" style="color: white;">
-            <h1>
-                Not Just a Club,
-                <span style="color:grey"> But a family </span>
-            </h1>
-
-            <p class="lead">The SwampBots are more than just a robotics team; they're a close-knit group of students who share a passion for problem-solving and innovation. They work together, combining individual strengths to tackle challenges and achieve their goals. This sense of community drives their success, creating an environment where every member is valued and supported. In the end, it's not just about winning competitions, but about growing and learning together as a team.</p>
-        </div>
-        <div class="col-md-2"></div>
-    </div>
-
-    <div class="row py-5 bg-light text-center"> <!-- Centering text -->
-        <div class="col-lg-6">
-            <img class="bd-placeholder-img rounded-circle mx-auto" width="140" height="140" src="horst.jpeg" alt="Placeholder">
-            <h2 class="fw-normal">Horst Daichendt</h2>
-            <p>Placeholder: Head advisor of the River Bluff High School Swamp Bots and sponsor.</p>
-            <p><a class="btn btn-secondary" href="#">More details »</a></p>
-        </div>
-
-        <div class="col-lg-6">
-            <svg class="bd-placeholder-img rounded-circle mx-auto" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
-                <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">PIC HERE</text>
-            </svg>
-            <h2 class="fw-normal">Placeholder: Team leaders</h2>
-            <p>More than one! </p>
-            <p><a class="btn btn-secondary" href="#">More details »</a></p>
-        </div>
-    </div>
-</div>
 </body>
 </html>
