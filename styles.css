@@ -119,9 +119,23 @@
     .nav-item.dropdown:hover > .nav-link {
         pointer-events: auto;
     }
-}
 
-body {
-    padding: 0; /* Reset body padding */
-}
+    .main {
+        padding-top: 150px;
+        background-color: #124532;
+        color: white;
+    }
 
+    .main-button {
+        transition: transform 0.3s ease;
+    }
+
+    .main-button:hover {
+        transform: scaleX(1.05); /* Scale horizontally by 5% */
+        color: black;
+    }
+
+    .fs-0 {
+        font-size: 5rem;
+    }
+}
