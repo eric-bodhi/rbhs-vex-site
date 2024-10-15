@@ -128,14 +128,32 @@
 
     .main-button {
         transition: transform 0.3s ease;
+        color: black !important;  /* Ensures text stays black */
+        font-weight: bold !important;  /* Ensures bold text */
     }
 
     .main-button:hover {
         transform: scaleX(1.05); /* Scale horizontally by 5% */
-        color: black;
+        color: black !important;  /* Keep text color black on hover, focus, and active */
+        font-weight: bold !important;  /* Keep text bold on hover, focus, and active */
     }
 
+    .event {
+        width: 205px;
+    }
+    /* event padding */
+    .ep {
+        padding-bottom: 5px;
+    }
     .fs-0 {
         font-size: 5rem;
+    }
+
+    .fs-6 {
+        font-size: 1rem;
+    }
+
+    .pb-6 {
+        padding-bottom: 4rem;
     }
 }
