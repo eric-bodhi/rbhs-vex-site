@@ -121,7 +121,8 @@
     }
 
     .main {
-        padding-top: 150px;
+        max-height: 100vh;
+        padding-top: 191px;
         background-color: #124532;
         color: white;
     }
@@ -136,6 +137,17 @@
         transform: scaleX(1.05); /* Scale horizontally by 5% */
         color: black !important;  /* Keep text color black on hover, focus, and active */
         font-weight: bold !important;  /* Keep text bold on hover, focus, and active */
+    }
+
+    .main-button-margin {
+        margin-top: -400px;
+    }
+    .upcoming-events {
+        position: relative;
+        margin-left: 200px;
+        margin-right: 6rem !important;
+        width: 200px; /* Set a fixed width or use a percentage */
+        z-index: 1; /* Ensure it stays on top of other content */
     }
 
     .event {
