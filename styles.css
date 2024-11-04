@@ -153,6 +153,17 @@
     .event {
         width: 205px;
     }
+
+    .ml-main {
+        position: relative;
+        margin-left: 300px;
+    }
+
+    .me-main {
+        position: relative;
+        margin-right: 300px;
+    }
+
     /* event padding */
     .ep {
         padding-bottom: 5px;
@@ -161,11 +172,22 @@
         font-size: 5rem;
     }
 
+    .fs-main-h {
+        font-size: 54px;
+    }
+
+    .fs-main-p {
+        font-size: 19px;
+    }
     .fs-6 {
         font-size: 1rem;
     }
 
     .pb-6 {
         padding-bottom: 4rem;
+    }
+
+    .mt-6 {
+        margin-top: 4rem;
     }
 }
