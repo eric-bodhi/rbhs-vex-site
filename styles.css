@@ -235,6 +235,7 @@ body {
     .upcoming-events h3 {
         font-family: 'Switzer', sans-serif;
         font-weight: 700;
+        color: #CFB687 !important;
     }
 
     .event {
@@ -245,20 +246,26 @@ body {
 
     .event-date {
         font-weight: 900;
+        color: #CFB687 !important;
     }
+
     .stats {
         background-color: #124532;
     }
 
     .stats-text {
-        color: #e2e2e2;
-        font-family: 'Circularstd book', sans-serif;
+        color: white;
+        font-weight: 700;
+        font-size: 52px;
     }
 
     .stats-header {
         font-size: 65px;
-        font-weight: 1000 !important;
+        font-weight: 900 !important;
         color: #2E703B;
+        /* TODO: possible color choice
+        color: #CFB687;
+         */
         margin-bottom: 5px;
     }
 
@@ -272,20 +279,31 @@ body {
         margin-bottom: 30px;
         padding: 0 20px;
         border-left: 5px solid #e2e2e2;
-        color: #e2e2e2;
-        font-family: 'Circularstd book', sans-serif;
+        color: white;
         font-size: 20px;
         line-height: 29px;
+    }
+
+    .faq h1 {
+        font-size: 54px;
+        font-weight: 900;
+        color: #CFB687;
+    }
+
+    .faq h2 {
+        font-weight: 700;
+        color: #124532;
+    }
+
+    .faq p {
+        font-weight: 400;
     }
 
     .footer {
         background-color: #D3D3D3; /* Light shadow above footer */
         text-align: center;
     }
-    .fs-stats {
-        font-size: 52px;
-        font-weight: 300;
-    }
+
     .ml-main {
         position: relative;
         margin-left: 300px;
