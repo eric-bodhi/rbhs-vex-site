@@ -190,15 +190,29 @@
             <button
                     type="button"
                     class="btn bg-white fw-bold fs-5 rounded-5 px-4 py-2 main-button main-button-margin"
+                    id="scroll-button"
             >
                 Read more
             </button>
+
+            <!-- button animation to scroll to next section-->
+            <script>
+                document.getElementById("scroll-button").addEventListener("click", function(event) {
+                    event.preventDefault();
+                    document.querySelector("#read-more-target").scrollIntoView({
+                        behavior: "smooth"
+                    });
+                });
+            </script>
+
         </div>
         <div class="col-3"></div>
     </div>
 </div>
 
-<div class="container-fluid bg-light" style="height: 700px">
+
+
+<div class="container-fluid bg-light" id="read-more-target" style="height: 700px">
     <div class="row ml-main me-main mb-5">
         <div class="col-5 mt-6">
             <h1 class="fw-bold fs-main-h mb-4">Swamp Bots</h1>
