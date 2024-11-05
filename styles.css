@@ -1,3 +1,77 @@
+@font-face {
+    font-family: 'Switzer';
+    src: url('fonts/Switzer-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('fonts/Switzer-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('fonts/Switzer-Extrabold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('fonts/Switzer-Extralight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('fonts/Switzer-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('fonts/Switzer-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('fonts/Switzer-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('fonts/Switzer-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('fonts/Switzer-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('fonts/Switzer-Variable.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Switzer', sans-serif;
+}
+
 @media (max-width: 1400px) {
     .navbar-collapse {
         height: 100vh;
@@ -124,7 +198,14 @@
         max-height: 100vh;
         padding-top: 191px;
         background-color: #124532;
+        <!-- background-image: url("gears.png"); -->
+        background-position: center;
         color: white;
+    }
+
+    .main h1 {
+        font-family: 'Switzer', sans-serif;
+        font-weight: 900;
     }
 
     .main-button {
@@ -142,6 +223,7 @@
     .main-button-margin {
         margin-top: -400px;
     }
+
     .upcoming-events {
         position: relative;
         margin-left: 200px;
@@ -150,10 +232,20 @@
         z-index: 1; /* Ensure it stays on top of other content */
     }
 
-    .event {
-        width: 205px;
+    .upcoming-events h3 {
+        font-family: 'Switzer', sans-serif;
+        font-weight: 700;
     }
 
+    .event {
+        width: 205px;
+        font-weight: 700;
+        color: #D8E0DD;
+    }
+
+    .event-date {
+        font-weight: 900;
+    }
     .stats {
         background-color: #124532;
     }
@@ -186,6 +278,10 @@
         line-height: 29px;
     }
 
+    .footer {
+        background-color: #D3D3D3; /* Light shadow above footer */
+        text-align: center;
+    }
     .fs-stats {
         font-size: 52px;
         font-weight: 300;
