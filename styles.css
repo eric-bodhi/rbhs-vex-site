@@ -154,6 +154,42 @@
         width: 205px;
     }
 
+    .stats {
+        background-color: #124532;
+    }
+
+    .stats-text {
+        color: #e2e2e2;
+        font-family: 'Circularstd book', sans-serif;
+    }
+
+    .stats-header {
+        font-size: 65px;
+        font-weight: 1000 !important;
+        color: #2E703B;
+        margin-bottom: 5px;
+    }
+
+    .stats-caption {
+        font-size: 30px;
+        font-weight: 900 !important;
+        color: #e2e2e2;
+    }
+
+    blockquote {
+        margin-bottom: 30px;
+        padding: 0 20px;
+        border-left: 5px solid #e2e2e2;
+        color: #e2e2e2;
+        font-family: 'Circularstd book', sans-serif;
+        font-size: 20px;
+        line-height: 29px;
+    }
+
+    .fs-stats {
+        font-size: 52px;
+        font-weight: 300;
+    }
     .ml-main {
         position: relative;
         margin-left: 300px;
