@@ -308,6 +308,7 @@ body {
         font-weight: 400;
     }
 
+    /* White footer
     .footer {
         text-align: center;
         border-top: 1px solid black;
@@ -337,6 +338,44 @@ body {
 
     .footer h6 {
         font-weight: 600;
+    }
+     */
+
+    .footer {
+        text-align: center;
+        border-top: 1px solid black;
+        background-image:
+            linear-gradient(180deg, rgba(18, 69, 50, 0.2), rgba(0, 0, 0, 0.68)),
+            linear-gradient(180deg, rgba(18, 69, 50, 0.7), rgba(12, 50, 36, 0.7)),
+            url('white-gears.jpg');
+
+    }
+
+    .footer h4 {
+        font-weight: 900;
+        color: #CFB687;
+    }
+
+    .footer a {
+        font-weight: 700;
+        color: #D8E0DD;
+    }
+
+    .footer a:hover {
+        color: #CFB687;
+    }
+
+    .footer h5 {
+        font-weight: 700;
+        color: #D8E0DD;
+    }
+
+    .footer hr {
+        color: #D8E0DD;
+    }
+    .footer h6 {
+        font-weight: 600;
+        color: #D8E0DD;
     }
 
     .ml-main {
