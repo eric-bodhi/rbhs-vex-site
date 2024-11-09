@@ -21,137 +21,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="m-0 border-0">
-<!-- navbar -->
-<nav class="navbar navbar-expand-xxl fixed-top bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">
-            <img
-                    src="Swamp-Bots-Team-logo-768x1062-removebg.png"
-                    alt="Bootstrap logo"
-                    width="150"
-                    height="75"
-            />
-        </a>
 
-        <button
-                class="navbar-toggler border-0"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav5"
-                aria-controls="navbarNav5"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- TODO: Collapse animations with down arrow turning into up arrow -->
-        <div class="collapse navbar-collapse" id="navbarNav5">
-            <ul class="navbar-nav">
-                <!-- About Dropdown -->
-                <li class="nav-item dropdown collapsed">
-                    <a
-                            class="nav-link dropdown-toggle fw-bold"
-                            href="#"
-                            id="aboutDropdown"
-                            role="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#aboutDropdownMenu"
-                            aria-expanded="false"
-                    >
-                        About
-                    </a>
-                    <ul
-                            class="dropdown-menu collapse"
-                            id="aboutDropdownMenu"
-                            data-bs-parent="#navbarNav5"
-                    >
-                        <li>
-                            <a class="dropdown-item fw-bold" href="#">Our Advisors</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item fw-bold" href="#"
-                            >River Bluff High School</a
-                            >
-                        </li>
-                        <li>
-                            <a class="dropdown-item fw-bold" href="#"
-                            >Lexington 1 District</a
-                            >
-                        </li>
-                        <li><a class="dropdown-item fw-bold" href="#">Our Teams</a></li>
-                    </ul>
-                </li>
-
-                <!-- VEX Robotics Dropdown -->
-                <li class="nav-item dropdown">
-                    <a
-                            class="nav-link dropdown-toggle collapsed fw-bold"
-                            href="#"
-                            id="vexDropdown"
-                            role="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#vexDropdownMenu"
-                            aria-expanded="false"
-                    >
-                        VEX Robotics
-                    </a>
-                    <ul
-                            class="dropdown-menu collapse"
-                            id="vexDropdownMenu"
-                            data-bs-parent="#navbarNav5"
-                    >
-                        <li>
-                            <a class="dropdown-item fw-bold" href="#">What's VEX?</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item fw-bold" href="#">Annual Game</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- Resources Dropdown -->
-                <li class="nav-item dropdown">
-                    <a
-                            class="nav-link dropdown-toggle collapsed fw-bold"
-                            href="#"
-                            id="resourcesDropdown"
-                            role="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#resourcesDropdownMenu"
-                            aria-expanded="false"
-                    >
-                        Resources
-                    </a>
-                    <ul
-                            class="dropdown-menu collapse"
-                            id="resourcesDropdownMenu"
-                            data-bs-parent="#navbarNav5"
-                    >
-                        <li>
-                            <a class="dropdown-item fw-bold" href="#">Team Resources</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item fw-bold" href="#">Volunteering</a>
-                        </li>
-                        <li><a class="dropdown-item fw-bold" href="#">Forms</a></li>
-                    </ul>
-                </li>
-
-                <!-- Other Links -->
-                <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#">Sponsor Us!</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#">Upcoming Events</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<div id="navbar">
+    <script src="include/navbar.js"></script>
+</div>
 
 <!-- Main Content -->
-<!-- TODO: Added background image -->
 <div class="container-fluid main vh-100">
     <div class="row pb-4">
         <div class="col-2 upcoming-events me-5">
@@ -354,52 +229,8 @@
 </div>
 
 <!-- Footer -->
-<!-- TODO: ADD LINKS -->
-<div class="container-fluid footer mt-5 pb-5">
-    <div class="row ml-main me-main">
-        <div class="col-2 mt-5">
-            <h4>ABOUT US</h4>
-            <h5><a href="#home" class="text-decoration-none ">Home</a></h5>
-            <h5><a href="#advisors" class="text-decoration-none ">Advisors</a></h5>
-            <h5><a href="#our-school" class="text-decoration-none ">Our School</a></h5>
-        </div>
-
-        <div class="col-2 mt-5">
-            <h4>VEX</h4>
-            <h5><a href="#advisors" class="text-decoration-none ">What's Vex?</a></h5>
-            <h5><a href="#our-school" class="text-decoration-none ">Annual Game</a></h5>
-        </div>
-
-        <div class="col-2 mt-5">
-            <h4>RESOUCES</h4>
-            <h5><a href="#home" class="text-decoration-none ">Volunteering</a></h5>
-            <h5><a href="#advisors" class="text-decoration-none ">Sponsorship</a></h5>
-            <h5><a href="#our-school" class="text-decoration-none ">Forms</a></h5>
-        </div>
-
-        <div class="col-2 mt-5">
-            <h4>SPONSOR US!</h4>
-            <h5><a href="#sponsor class=" class="text-decoration-none">Sponsor Information</a></h5>
-        </div>
-
-        <div class="col-4 mt-5">
-            <h4>CONNECT WITH US</h4>
-            <h5>River Bluff High School,</h5>
-            <h5>320 Corley Mill Rd, Lexington, SC 29072, United States</h5>
-            <h5>hdaichendt@lexington1.net</h5>
-        </div>
-    </div>
-
-    <hr class="ml-main me-main mt-5">
-
-    <div class="row ml-main me-main">
-        <div class="col-6 mt-3 text-start">
-            <h6>© 2024 Swamp Bots. All rights reserved.</h6>
-        </div>
-        <div class="col-6 mt-3 text-end">
-            <h6>Eric Floyd</h6>
-        </div>
-    </div>
+<div id="footer">
+    <script src="include/footer.js"></script>
 </div>
 
 </body>
