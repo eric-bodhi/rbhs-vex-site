@@ -148,6 +148,7 @@ body {
     }
     .navbar {
         background-color: transparent;
+        border: 2px solid black;
     }
 
     .navbar-brand {
@@ -216,14 +217,12 @@ body {
 
     .main-button {
         transition: transform 0.3s ease;
-        color: black !important;  /* Ensures text stays black */
-        font-weight: bold !important;  /* Ensures bold text */
+        color: black !important;
+        font-weight: bold !important;
     }
 
     .main-button:hover {
         transform: scaleX(1.05); /* Scale horizontally by 5% */
-        color: black !important;  /* Keep text color black on hover, focus, and active */
-        font-weight: bold !important;  /* Keep text bold on hover, focus, and active */
     }
 
     .main-button-margin {
@@ -378,6 +377,36 @@ body {
         color: #D8E0DD;
     }
 
+    /* Sponsor page */
+    .sponsor {
+        background-image:
+            linear-gradient(180deg, rgba(18, 69, 50, 0.2), rgba(0, 0, 0, 0.68)),
+            linear-gradient(180deg, rgba(18, 69, 50, 0.7), rgba(12, 50, 36, 0.7)),
+            url('white-gears.jpg');
+        color: white;
+        padding-top: 191px;
+    }
+
+    .sponsor h1 {
+        font-weight: 900;
+    }
+
+    .sponsor h3 {
+        font-weight: 700;
+        color: #CFB687;
+    }
+
+    .sponsor button {
+        transition: transform 0.3s ease;
+        color: black !important;
+        font-weight: bold !important;
+    }
+
+    .sponsor button:hover {
+        transform: scaleX(1.05); /* Scale horizontally by 5% */
+    }
+
+    /* Bootstrap custom classes */
     .ml-main {
         position: relative;
         margin-left: 300px;

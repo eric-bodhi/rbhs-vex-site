@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const navbarHTML = `
 <nav class="navbar navbar-expand-xxl fixed-top bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="index.html">
             <img
                     src="../Swamp-Bots-Team-logo-768x1062-removebg.png"
                     alt="Bootstrap logo"
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 <!-- Other Links -->
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#">Sponsor Us!</a>
+                    <a class="nav-link fw-bold" href="sponsor.html">Sponsor Us!</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link fw-bold" href="#">Upcoming Events</a>
