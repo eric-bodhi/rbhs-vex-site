@@ -27,68 +27,92 @@
     <script src="../include/navbar.js"></script>
 </div>
 
-<!-- TODO: Add smaller cards for adjacent events -->
-<div class="container-fluid general" style="height: 800px;">
-    <div class="row me-main ml-main">
+<div class="container-fluid general" style="height: 900px;">
+    <div class="row me-main ml-main pb-5">
         <h1 class="fs-0 text-center">Upcoming Events!</h1>
     </div>
 
     <div class="row">
-        <div class="col-12">
-            <div class="carousel slide" id="carouselExampleControls">
-                <div class="carousel-inner position-relative" id="carouselInner">
-                </div>
-                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleControls"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleControls"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <div class="carousel slide" id="carouselExampleControls">
+            <div class="carousel-inner" id="carouselInner">
             </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleControls"
+                    type="button">
+                <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleControls"
+                    type="button">
+                <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 </div>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const eventsData = [
-            { date: "2024-01-01", title: "Event 1", description: "Event 1 description", img: "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
-            { date: "2024-02-10", title: "Event 2", description: "Event 2 description", img: "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
-            { date: "2024-11-12", title: "Event 3", description: "Event 3 description", img: "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
-            { date: "2024-11-25", title: "Event 4", description: "Event 4 description", img: "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
-        ];
+        fetch('events.json')  // Adjust path as needed
+            .then(response => response.json())
+            .then(eventsData => {
+                // Sort events by date in ascending order
+                eventsData.sort((a, b) => new Date(a.date) - new Date(b.date));
 
-        // Sort events by date in ascending order
-        eventsData.sort((a, b) => new Date(a.date) - new Date(b.date));
+                // Set up the index of the first upcoming event
+                const currentDate = new Date();
+                let activeEventIndex = eventsData.findIndex(event => new Date(event.date) >= currentDate);
+                if (activeEventIndex === -1) activeEventIndex = 0;
 
-        // Set up the index of the first upcoming event
-        const currentDate = new Date();
-        let activeEventIndex = eventsData.findIndex(event => new Date(event.date) >= currentDate);
-        if (activeEventIndex === -1) activeEventIndex = 0; // Default to the first event if none are upcoming
+                // Populate the carousel
+                const carouselInner = document.getElementById('carouselInner');
 
-        // Populate the carousel
-        const carouselInner = document.getElementById('carouselInner');
-        eventsData.forEach((event, index) => {
-            const eventItem = document.createElement('div');
-            eventItem.classList.add('carousel-item');
-            if (index === activeEventIndex) eventItem.classList.add('active'); // Only the active event should show
+                // Function to create event card
+                function createEventCard(event, sizeClass) {
+                    const eventItem = document.createElement('div');
+                    eventItem.classList.add(sizeClass);
+                    eventItem.innerHTML = `
+                    <div class="card ml-5" style="padding: 20px; border-radius: 10px;">
+                        <img src="${event.img}" class="card-img-top" alt="${event.title}" style="max-height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="event-title">${event.title}</h5>
+                            <p class="event-date">${new Date(event.date).toISOString().split('T')[0]}</p>
+                            <p class="event-description">${event.description}</p>
+                        </div>
+                    </div>
+                `;
+                    return eventItem;
+                }
 
-            eventItem.innerHTML = `
-            <div class="card mx-auto" style="width: 475px; background-color: white; padding: 20px; border-radius: 10px;">
-                <img src="${event.img}" class="card-img-top" alt="${event.title}" style="max-height: 200px; object-fit: cover;">
-                <div class="card-body text-center">
-                    <h5 class="event-title">${event.title}</h5>
-                    <p class="event-date">${new Date(event.date).toISOString().split('T')[0]}</p>
-                    <p class="event-description">${event.description}</p>
-                </div>
-            </div>
-        `;
-            carouselInner.appendChild(eventItem);
-        });
+// Render active, previous, and next cards
+                function renderCards() {
+                    carouselInner.innerHTML = '';  // Clear current cards
+
+                    const prevIndex = (activeEventIndex - 1 + eventsData.length) % eventsData.length;
+                    const nextIndex = (activeEventIndex + 1) % eventsData.length;
+
+                    const prevEventCard = createEventCard(eventsData[prevIndex], 'small-card');
+                    const activeEventCard = createEventCard(eventsData[activeEventIndex], 'active-card'); // Center active card
+                    const nextEventCard = createEventCard(eventsData[nextIndex], 'small-card');
+
+                    // Append all cards in the desired order
+                    carouselInner.appendChild(prevEventCard);
+                    carouselInner.appendChild(activeEventCard);
+                    carouselInner.appendChild(nextEventCard);
+                }
+                renderCards();
+
+                // Event listeners for navigation buttons
+                document.querySelector('.carousel-control-prev').addEventListener('click', () => {
+                    activeEventIndex = (activeEventIndex - 1 + eventsData.length) % eventsData.length;
+                    renderCards();
+                });
+
+                document.querySelector('.carousel-control-next').addEventListener('click', () => {
+                    activeEventIndex = (activeEventIndex + 1) % eventsData.length;
+                    renderCards();
+                });
+            })
+            .catch(error => console.error('Error loading events:', error));
     });
 </script>
 

@@ -1,0 +1,12 @@
+[
+  { "date": "2024-01-01", "title": "New Year Celebration", "description": "Join us for a festive New Year's celebration with music and fireworks!", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2024-02-10", "title": "Winter Workshop", "description": "A hands-on workshop to learn winter crafts and decorations.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2024-03-05", "title": "Spring Into Coding", "description": "A beginner coding workshop for students interested in programming.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2024-04-12", "title": "Earth Day Cleanup", "description": "Help us make a difference by cleaning up the community park for Earth Day.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2024-05-20", "title": "Summer Kickoff Party", "description": "Celebrate the start of summer with games, food, and fun activities!", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2024-06-15", "title": "Tech Talk Expo", "description": "Industry leaders discuss the latest trends in technology and innovation.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2024-08-10", "title": "Back to School Bash", "description": "An event to prepare students for the school year with supplies and resources.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2024-09-21", "title": "Autumn Arts Festival", "description": "A festival celebrating local artists with food stalls and live performances.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2024-10-31", "title": "Halloween Spooktacular", "description": "A Halloween event with costume contests, games, and spooky stories.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2024-12-15", "title": "Holiday Gift Fair", "description": "Shop unique holiday gifts from local vendors and enjoy seasonal treats.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" }
+]
