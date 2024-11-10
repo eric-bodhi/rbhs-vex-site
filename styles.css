@@ -73,6 +73,31 @@ body {
 }
 
 @media (max-width: 1400px) {
+        /* This will cover the whole page with a black overlay */
+        .mobile-coming-soon-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            z-index: 1000; /* Ensure it’s above everything else */
+        }
+
+    .navbar {
+        background-color: black !important;
+    }
+
+    a {
+        color: black !important;
+    }
+
+    /*
     .navbar-collapse {
         height: 100vh;
         display: flex;
@@ -83,7 +108,6 @@ body {
         transition: height 0.5s;
     }
 
-    /* Navbar collapse transition */
     .navbar-collapse.collapsing {
         position: relative;
         height: 0;
@@ -91,8 +115,6 @@ body {
         transition: height 0.3s ease;
     }
 
-    /* TODO add mobile transition for dropdown-menu */
-    /* Dropdown menu default */
     .dropdown-menu {
         max-height: 0;
         opacity: 0;
@@ -101,15 +123,12 @@ body {
         transition: max-height 0.5s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
     }
 
-    /* Dropdown menu expanding (show) */
     .dropdown-menu.show {
-        max-height: 300px; /* Adjust as needed */
         opacity: 1;
         visibility: visible;
         transition: max-height 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
     }
 
-    /* Specialized dropdown collapsing */
     .dropdown-menu.collapsing {
         max-height: 0;
         opacity: 0;
@@ -139,6 +158,7 @@ body {
     .nav-item:not(:last-child) {
         border-bottom: 1px solid gray;
     }
+    */
 }
 
 /* Desktop-specific styles (md and larger) */
