@@ -427,31 +427,39 @@ body {
         object-fit: cover; /* Ensure the image covers the circle area without stretching */
     }
 
-    /* Upcoming Events Page */
+    /* Carousel styling */
     .general .carousel-control-prev-icon,
     .general .carousel-control-next-icon {
         background-color: black; /* Change the color of navigation buttons */
+        z-index: 1000;
     }
 
     .general .carousel-item {
-        text-align: center;
+        display: none;
+        height: 100%;
+        width: 100%;
     }
 
-    .general .carousel-item img {
-        max-height: 300px;
-        width: auto;
-        margin: auto;
+    .general .carousel-item .card {
+        width: 475px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
 
+    .general .carousel-item.active {
+        display: block;
+    }
     .general .event-date {
         font-weight: 900;
-        font-size: 20px;
+        font-size: 18px;
         color: #CFB687;
     }
 
     .general .event-title {
         font-weight: 900;
-        font-size: 20px;
+        font-size: 22px;
         color: #124532;
     }
 
@@ -460,6 +468,7 @@ body {
         font-size: 16px;
         color: black;
     }
+
     /* Bootstrap custom classes */
     .ml-main {
         position: relative;
