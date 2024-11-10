@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
     <div class="row ml-main me-main">
         <div class="col-2 mt-5">
             <h4>ABOUT US</h4>
-            <h5><a href="#home" class="text-decoration-none ">Home</a></h5>
-            <h5><a href="#advisors" class="text-decoration-none ">Advisors</a></h5>
+            <h5><a href="index.html" class="text-decoration-none ">Home</a></h5>
+            <h5><a href="advisor.html" class="text-decoration-none ">Advisors</a></h5>
             <h5><a href="#our-school" class="text-decoration-none ">Our School</a></h5>
         </div>
 
@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
         <div class="col-2 mt-5">
             <h4>RESOUCES</h4>
-            <h5><a href="#home" class="text-decoration-none ">Volunteering</a></h5>
-            <h5><a href="#advisors" class="text-decoration-none ">Sponsorship</a></h5>
+            <h5><a href="#" class="text-decoration-none ">Volunteering</a></h5>
+            <h5><a href="sponsor.html" class="text-decoration-none ">Sponsorship</a></h5>
             <h5><a href="#our-school" class="text-decoration-none ">Forms</a></h5>
         </div>
 
         <div class="col-2 mt-5">
             <h4>SPONSOR US!</h4>
-            <h5><a href="#sponsor class=" class="text-decoration-none">Sponsor Information</a></h5>
+            <h5><a href="sponsor.html" class="text-decoration-none">Sponsor Information</a></h5>
         </div>
 
         <div class="col-4 mt-5">

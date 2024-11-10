@@ -406,6 +406,26 @@ body {
         transform: scaleX(1.05); /* Scale horizontally by 5% */
     }
 
+    /* Advisors page */
+    .advisor h1{
+        font-weight: 900;
+        color: #CFB687;
+    }
+
+    .advisor h3 {
+        font-weight: 700;
+        color: #2E703B;
+    }
+
+    .advisor p {
+        font-weight: 500;
+    }
+    .advisor-image {
+        width: 400px; /* Adjust the size as needed */
+        height: 400px; /* Ensure the height and width are the same for a perfect circle */
+        object-fit: cover; /* Ensure the image covers the circle area without stretching */
+    }
+
     /* Bootstrap custom classes */
     .ml-main {
         position: relative;
@@ -415,6 +435,14 @@ body {
     .me-main {
         position: relative;
         margin-right: 300px;
+    }
+
+    .mt-main {
+        margin-top: 191px;
+    }
+
+    .mb-6 {
+        margin-bottom: 5rem;
     }
 
     /* event padding */

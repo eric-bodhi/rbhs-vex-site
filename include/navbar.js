@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 <li class="nav-item dropdown collapsed">
                     <a
                             class="nav-link dropdown-toggle fw-bold"
-                            href="#"
                             id="aboutDropdown"
                             role="button"
                             data-bs-toggle="collapse"
@@ -45,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             data-bs-parent="#navbarNav5"
                     >
                         <li>
-                            <a class="dropdown-item fw-bold" href="#">Our Advisors</a>
+                            <a class="dropdown-item fw-bold" href="advisors.html">Our Advisors</a>
                         </li>
                         <li>
                             <a class="dropdown-item fw-bold" href="#"
@@ -57,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             >Lexington 1 District</a
                             >
                         </li>
-                        <li><a class="dropdown-item fw-bold" href="#">Our Teams</a></li>
+                        <li><a class="dropdown-item fw-bold" href="teams.html">Our Teams</a></li>
                     </ul>
                 </li>
 
@@ -65,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 <li class="nav-item dropdown">
                     <a
                             class="nav-link dropdown-toggle collapsed fw-bold"
-                            href="#"
                             id="vexDropdown"
                             role="button"
                             data-bs-toggle="collapse"
@@ -80,10 +78,10 @@ document.addEventListener("DOMContentLoaded", function() {
                             data-bs-parent="#navbarNav5"
                     >
                         <li>
-                            <a class="dropdown-item fw-bold" href="#">What's VEX?</a>
+                            <a class="dropdown-item fw-bold" href="https://www.vexrobotics.com/?srsltid=AfmBOoqnIvX3Gw8xvZ66LbmqhaWdPq8NzIwmxYWvuyG7L4tH8ldwIULi">What's VEX?</a>
                         </li>
                         <li>
-                            <a class="dropdown-item fw-bold" href="#">Annual Game</a>
+                            <a class="dropdown-item fw-bold" href="https://www.vexrobotics.com/v5/competition/vrc-current-game?srsltid=AfmBOoqguj6C3e02eJgQ5cbjgViaDI-Uc1-F6cCcsYgI4l3IS4NbQYSt">Annual Game</a>
                         </li>
                     </ul>
                 </li>
@@ -92,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 <li class="nav-item dropdown">
                     <a
                             class="nav-link dropdown-toggle collapsed fw-bold"
-                            href="#"
                             id="resourcesDropdown"
                             role="button"
                             data-bs-toggle="collapse"
@@ -118,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 <!-- Other Links -->
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="sponsor.html">Sponsor Us!</a>
+                    <a class="nav-link fw-bold" href="sponsor.html">Sponsor Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link fw-bold" href="#">Upcoming Events</a>
