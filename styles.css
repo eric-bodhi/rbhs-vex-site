@@ -163,6 +163,9 @@ body {
 
 /* Desktop-specific styles (md and larger) */
 @media (min-width: 1401px) {
+    .mobile-coming-soon-overlay {
+        display: none;
+    }
     .navbar-collapse {
         display: flex;
     }
