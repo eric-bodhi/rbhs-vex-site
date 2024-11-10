@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <h4>ABOUT US</h4>
             <h5><a href="index.html" class="text-decoration-none ">Home</a></h5>
             <h5><a href="advisor.html" class="text-decoration-none ">Advisors</a></h5>
-            <h5><a href="#our-school" class="text-decoration-none ">Our School</a></h5>
+            <h5><a href="https://sc50000473.schoolwires.net/Page/59" class="text-decoration-none ">Our School</a></h5>
         </div>
 
         <div class="col-2 mt-5">

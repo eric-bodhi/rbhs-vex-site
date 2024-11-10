@@ -47,12 +47,12 @@ document.addEventListener("DOMContentLoaded", function() {
                             <a class="dropdown-item fw-bold" href="advisors.html">Our Advisors</a>
                         </li>
                         <li>
-                            <a class="dropdown-item fw-bold" href="#"
+                            <a class="dropdown-item fw-bold" href="https://sc50000473.schoolwires.net/Page/59"
                             >River Bluff High School</a
                             >
                         </li>
                         <li>
-                            <a class="dropdown-item fw-bold" href="#"
+                            <a class="dropdown-item fw-bold" href="https://sc50000473.schoolwires.net/Page/59"
                             >Lexington 1 District</a
                             >
                         </li>

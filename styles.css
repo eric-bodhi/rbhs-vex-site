@@ -378,7 +378,7 @@ body {
     }
 
     /* Sponsor page */
-    .sponsor {
+    .general {
         background-image:
             linear-gradient(180deg, rgba(18, 69, 50, 0.2), rgba(0, 0, 0, 0.68)),
             linear-gradient(180deg, rgba(18, 69, 50, 0.7), rgba(12, 50, 36, 0.7)),
@@ -387,22 +387,22 @@ body {
         padding-top: 191px;
     }
 
-    .sponsor h1 {
+    .general h1 {
         font-weight: 900;
     }
 
-    .sponsor h3 {
+    .general h3 {
         font-weight: 700;
         color: #CFB687;
     }
 
-    .sponsor button {
+    .general button {
         transition: transform 0.3s ease;
         color: black !important;
         font-weight: bold !important;
     }
 
-    .sponsor button:hover {
+    .general button:hover {
         transform: scaleX(1.05); /* Scale horizontally by 5% */
     }
 
@@ -420,12 +420,46 @@ body {
     .advisor p {
         font-weight: 500;
     }
+
     .advisor-image {
         width: 400px; /* Adjust the size as needed */
         height: 400px; /* Ensure the height and width are the same for a perfect circle */
         object-fit: cover; /* Ensure the image covers the circle area without stretching */
     }
 
+    /* Upcoming Events Page */
+    .general .carousel-control-prev-icon,
+    .general .carousel-control-next-icon {
+        background-color: black; /* Change the color of navigation buttons */
+    }
+
+    .general .carousel-item {
+        text-align: center;
+    }
+
+    .general .carousel-item img {
+        max-height: 300px;
+        width: auto;
+        margin: auto;
+    }
+
+    .general .event-date {
+        font-weight: 900;
+        font-size: 20px;
+        color: #CFB687;
+    }
+
+    .general .event-title {
+        font-weight: 900;
+        font-size: 20px;
+        color: #124532;
+    }
+
+    .general .event-description {
+        font-weight: 500;
+        font-size: 16px;
+        color: black;
+    }
     /* Bootstrap custom classes */
     .ml-main {
         position: relative;
