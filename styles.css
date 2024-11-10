@@ -428,6 +428,10 @@ body {
     }
 
     /* Carousel styling */
+    .fullview {
+        height: 100vh;
+    }
+
     .general .carousel-control-prev-icon,
     .general .carousel-control-next-icon {
         background-color: black; /* Change the color of navigation buttons */
@@ -481,6 +485,19 @@ body {
         font-weight: 500;
         font-size: 16px;
         color: black;
+    }
+
+    .events {
+        height: 500px;
+    }
+
+    .events h1 {
+        font-weight: 900;
+        color: #124532;
+    }
+
+    .events p {
+        font-weight: 500;
     }
 
     /* Bootstrap custom classes */

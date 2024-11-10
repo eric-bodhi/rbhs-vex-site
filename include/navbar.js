@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <a class="nav-link fw-bold" href="sponsor.html">Sponsor Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#">Upcoming Events</a>
+                    <a class="nav-link fw-bold" href="upcoming-events.html">Upcoming Events</a>
                 </li>
             </ul>
         </div>

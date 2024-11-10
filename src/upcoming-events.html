@@ -27,21 +27,21 @@
     <script src="../include/navbar.js"></script>
 </div>
 
-<div class="container-fluid general" style="height: 900px;">
-    <div class="row me-main ml-main pb-5">
-        <h1 class="fs-0 text-center">Upcoming Events!</h1>
+<div class="container-fluid general fullview" style="padding-top: 150px">
+    <div class="row me-main ml-main">
+        <h1 class="fs-0 text-center pb-3">Upcoming Events</h1>
     </div>
 
     <div class="row">
-        <div class="carousel slide" id="carouselExampleControls">
+        <div class="carousel slide" id="upcoming-events">
             <div class="carousel-inner" id="carouselInner">
             </div>
-            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleControls"
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#upcoming-events"
                     type="button">
                 <span aria-hidden="true" class="carousel-control-prev-icon"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleControls"
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#upcoming-events"
                     type="button">
                 <span aria-hidden="true" class="carousel-control-next-icon"></span>
                 <span class="visually-hidden">Next</span>
@@ -83,7 +83,7 @@
                     return eventItem;
                 }
 
-// Render active, previous, and next cards
+                // Render active, previous, and next cards
                 function renderCards() {
                     carouselInner.innerHTML = '';  // Clear current cards
 
@@ -99,6 +99,7 @@
                     carouselInner.appendChild(activeEventCard);
                     carouselInner.appendChild(nextEventCard);
                 }
+
                 renderCards();
 
                 // Event listeners for navigation buttons
@@ -115,6 +116,45 @@
             .catch(error => console.error('Error loading events:', error));
     });
 </script>
+
+<div class="container-fluid events" style="height: 500px">
+    <div class="row me-main ml-main mt-5">
+        <div class="col-6">
+            <h1>What's a Competition Like?</h1>
+            <p class="fs-5 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ante et tortor
+                eleifend tempus. Proin et ante eget mauris placerat efficitur. Vivamus consequat orci sed vestibulum
+                pretium. Donec feugiat, lectus a sodales viverra, orci lorem scelerisque lorem, eget efficitur erat sem
+                vel sapien. Ut cursus orci a nisi pharetra, eu pretium leo euismod. Pellentesque ut suscipit libero.
+                Morbi feugiat, lorem ac posuere faucibus, sapien magna ultricies lectus, in ullamcorper augue lorem eu
+                eros. Etiam euismod, lorem nec feugiat consectetur, nunc leo maximus justo, non ullamcorper velit odio
+                at libero. Nulla facilisi. Mauris nec turpis ac lorem hendrerit rutrum.</p>
+        </div>
+
+        <div class="col-6">
+            <div id="compPics" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../Swamp-Bots-Team-logo-768x1062-removebg.png" class="d-block w-100" alt="Swamp Bots Team Logo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Swamp-Bots-Team-logo-768x1062-removebg.png" class="d-block w-100" alt="Swamp Bots Team Logo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Swamp-Bots-Team-logo-768x1062-removebg.png" class="d-block w-100" alt="Swamp Bots Team Logo">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#compPics" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#compPics" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div id="footer">
     <script src="../include/footer.js"></script>
