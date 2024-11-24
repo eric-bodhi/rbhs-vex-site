@@ -1,9 +1,9 @@
 [
-  { "date": "2024-08-10", "title": "Back to School Bash", "description": "An event to prepare students for the school year with supplies and resources.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
-  { "date": "2024-09-21", "title": "Autumn Arts Festival", "description": "A festival celebrating local artists with food stalls and live performances.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
-  { "date": "2024-10-31", "title": "Halloween Spooktacular", "description": "A Halloween event with costume contests, games, and spooky stories.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
-  { "date": "2024-12-15", "title": "Holiday Gift Fair", "description": "Shop unique holiday gifts from local vendors and enjoy seasonal treats.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
-  { "date": "2025-01-25", "title": "Winter Robotics Expo", "description": "Showcase of robotics projects and competitions with workshops and demonstrations.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
-  { "date": "2025-03-14", "title": "Spring Fling", "description": "A spring celebration with games, music, and outdoor activities for the whole family.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" },
-  { "date": "2025-06-07", "title": "Summer Robotics Camp", "description": "A week-long camp for aspiring engineers to learn robotics and programming.", "img": "../Swamp-Bots-Team-logo-768x1062-removebg.png" }
+  { "date": "2024-08-10", "title": "Back to School Bash", "description": "An event to prepare students for the school year with supplies and resources.", "img": "Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2024-09-21", "title": "Autumn Arts Festival", "description": "A festival celebrating local artists with food stalls and live performances.", "img": "Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2024-10-31", "title": "Halloween Spooktacular", "description": "A Halloween event with costume contests, games, and spooky stories.", "img": "Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2024-12-15", "title": "Holiday Gift Fair", "description": "Shop unique holiday gifts from local vendors and enjoy seasonal treats.", "img": "Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2025-01-25", "title": "Winter Robotics Expo", "description": "Showcase of robotics projects and competitions with workshops and demonstrations.", "img": "Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2025-03-14", "title": "Spring Fling", "description": "A spring celebration with games, music, and outdoor activities for the whole family.", "img": "Swamp-Bots-Team-logo-768x1062-removebg.png" },
+  { "date": "2025-06-07", "title": "Summer Robotics Camp", "description": "A week-long camp for aspiring engineers to learn robotics and programming.", "img": "Swamp-Bots-Team-logo-768x1062-removebg.png" }
 ]
