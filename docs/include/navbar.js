@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
             <img
-                    src="../Swamp-Bots-Team-logo-768x1062-removebg.png"
+                    src="Swamp-Bots-Team-logo-768x1062-removebg.png"
                     alt="Bootstrap logo"
                     width="150px"
                     height="75px"
